@@ -1,0 +1,21 @@
+#project {
+    background: linear-gradient(270deg, #4A2CEB, #D32FF8, #FF4081, #4A2CEB);
+    background-size: 600% 600%;
+    transition: all 0.5s ease;
+    animation: gradientBG 3s ease infinite;
+    color: #fff;
+}
+
+@keyframes gradientBG {
+    0% {
+        background-position: 0% 50%;
+    }
+
+    50% {
+        background-position: 100% 50%;
+    }
+
+    100% {
+        background-position: 0% 50%;
+    }
+}
