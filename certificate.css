@@ -1,0 +1,59 @@
+.content{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap:20px;
+    justify-content: center;
+    
+}
+
+.certi{
+    
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 300px;
+    height: 250px;
+    border-radius: 20px;
+    background-color: rgb(65, 50, 99);
+    h1,.cbutton{
+        margin: 0px 0px 0px 0px;
+    }
+    h1{
+        font-size: 25px;
+    }
+    transition-property: all;
+    transition-duration: 1s;
+    
+
+}
+
+.certi:hover{
+    background-color: rgb(113, 105, 132);
+    transform: scale(1.1);
+    
+}
+
+ 
+#certificate {
+    background: linear-gradient(270deg, #4A2CEB, #D32FF8, #FF4081, #4A2CEB);
+    background-size: 600% 600%;
+    transition: all 0.5s ease;
+    animation: gradientBG 3s ease infinite;
+    color: #fff;
+}
+
+@keyframes gradientBG {
+    0% {
+        background-position: 0% 50%;
+    }
+
+    50% {
+        background-position: 100% 50%;
+    }
+
+    100% {
+        background-position: 0% 50%;
+    }
+}
