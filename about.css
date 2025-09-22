@@ -1,0 +1,142 @@
+.content {
+    margin-top: 35px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+}
+h2{
+    font-size: 25px;
+}
+.aboutbox {
+    border-radius: 20px;
+    width: 55vw;
+    height: 81vh;
+    .about {
+            border-radius: 20px;
+            height: 80vh;
+            background-color: rgba(43, 41, 66, 0.9);
+            display: flex;
+            flex-direction: column;
+            .aboutp{
+                margin: 20px 20px 20px 20px ;
+                display: flex;
+                flex-direction:column;
+                align-items: center;
+                gap:0px;
+                .aboutpimg{
+                    width: 150px;
+                    height: 150px;
+                    border-radius: 50%;
+                    background-image: url('./matrial/photo.jpg');
+                    background-size: cover;
+                    background-position: center;
+                    background-repeat: no-repeat;
+                    transition-property: all;
+                    transition-duration: 1s;
+                  
+                }
+                .aboutpimg:hover{
+                    transform: scale(1.1);
+                }
+                .aboutimgb {
+                    display: flex;
+                    flex-direction: column;
+                    align-items:center;
+                    gap:0px
+                }
+            }
+            .aboutdesc{
+                margin: 0px 20px 0px 20px;
+                text-align: justify;
+                overflow: scroll;
+                overscroll-behavior: none;
+            }
+            .iconp{
+                margin-left: 40px;
+                 a{
+                    color:aliceblue;
+                    font-size: 40px;
+                    margin-right: 10px;
+                    
+
+                 }
+                                  
+            }
+
+            
+    
+        }
+}
+
+.edbox {
+    width: 40vw;
+    height: 81vh;
+    border-radius: 35px;
+    .ed{
+            border-radius: 20px;
+            height: 80vh;
+            /*  */
+            display: flex;
+            flex-direction: column;
+            
+
+            .edcard{
+                padding-left: 20px;
+                margin-top:20px;
+                background-color: rgba(43, 41, 66, 0.9);
+                height: 150px;
+                border-radius: 20px;
+                transition-property: all;
+                transition-duration: 1s;
+            }
+            .edcard:hover{
+                background-color: rgba(19, 17, 43, 0.9);
+                transform: scale(1.1);
+            }
+    
+        }
+}
+
+
+@media screen and (max-width: 1000px) {
+    .content {
+        flex-direction: column;
+        align-items: center;
+        margin-top: 20px;
+    }
+
+    .aboutbox, .edbox {
+        width: 90vw;
+        height: auto;
+        margin-bottom: 20px;
+        border-radius: 20px;
+    }
+}
+ 
+.hobbies{
+    display: flex;
+    flex-wrap: wrap;
+
+}
+
+#about{
+    background: linear-gradient(270deg, #4A2CEB, #D32FF8, #FF4081, #4A2CEB);
+    background-size: 600% 600%;
+    transition: all 0.5s ease;
+    animation: gradientBG 3s ease infinite;
+    color: #fff;
+}
+
+@keyframes gradientBG {
+    0% {
+        background-position: 0% 50%;
+    }
+
+    50% {
+        background-position: 100% 50%;
+    }
+
+    100% {
+        background-position: 0% 50%;
+    }
+}
