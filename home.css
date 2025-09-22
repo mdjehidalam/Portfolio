@@ -1,0 +1,144 @@
+/* Content container */
+.content {
+    height: 80vh;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+    flex-wrap: wrap;
+    transition: all 0.3s ease;
+}
+
+/* Profile card */
+.profile {
+    transform: translate(-20px, 0px);
+    height: 300px;
+    width: 300px;
+    text-align: center;
+    display: grid;
+    grid-template-rows: repeat(3, 5fr);
+    grid-template-columns: 1fr;
+    gap: 0px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.profile:hover {
+    transform: translate(0px, -10px) scale(1.05);
+    box-shadow: 0 15px 25px rgba(77, 44, 235, 0.4);
+}
+
+/* Profile image */
+.profile .pimg {
+    background-image: url('./matrial/photo.jpg');
+    background-size: cover;
+    background-position: center;
+    height: 150px;
+    width: 150px;
+    margin-left: 25%;
+    margin-bottom: 10px;
+    border-radius: 50%;
+    transition: transform 0.3s ease;
+}
+
+.profile .pimg:hover {
+    transform: scale(1.1);
+}
+
+/* Resume button */
+.profile #resume {
+    background: linear-gradient(135deg, #4A2CEB, #D32FF8);
+    color: #E6EDF5;
+    height: 35px;
+    width: 150px;
+    border-radius: 20px;
+    border: none;
+    cursor: pointer;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.profile #resume:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 10px 20px rgba(211, 47, 248, 0.4);
+}
+
+/* Card container */
+.card {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    background-color: rgba(33, 65, 159,20%);
+    gap: 10px;
+    border-radius: 10px;
+    width: 200px;
+    overflow: scroll;
+    scrollbar-width: none;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.card:hover {
+    transform: translateY(-5px) scale(1.02);
+    box-shadow: 0 10px 20px rgba(77, 44, 235, 0.3);
+}
+
+/* Card image */
+.c1img {
+    background-image: url('./matrial/ATM.png');
+    background-size: cover;
+    background-position: center;
+    border-radius: 10px;
+}
+
+/* Small card image */
+.cimg {
+    margin-left: 25%;
+    margin-top: 3%;
+    height: 100px;
+    width: 100px;
+    border: none;
+    background-color: aqua;
+    border-radius: 10px;
+    transition: transform 0.3s ease;
+}
+
+.cimg:hover {
+    transform: scale(1.1) rotate(3deg);
+}
+
+/* Card button */
+.cbutton {
+    background: linear-gradient(135deg, #4A2CEB, #D32FF8);
+    color: #E6EDF5;
+    height: 30px;
+    width: 90px;
+    border: none;
+    border-radius: 20px;
+    cursor: pointer;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.cbutton:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 8px 15px rgba(211, 47, 248, 0.4);
+}
+
+/* Titles and descriptions */
+.title {
+    font-size: 20px;
+    font-weight: 700;
+}
+
+.desc {
+    font-size: 10px;
+    font-weight: 300;
+    font-style: italic;
+}
+
+/* Footer */
+.footer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    height: 10vh;
+}
