@@ -1,0 +1,110 @@
+.content{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+}
+.program{
+    width: 55vw;
+    height: fit-content;
+    background-color: rgba(38, 37, 64,0.4);
+    border-radius: 20px;
+
+    .programcon{
+        display: flex;
+        flex-wrap: wrap;
+        overflow: scroll;
+        scrollbar-width: none;
+        padding-bottom: 20px;
+        
+        .pcon{
+            margin-left: 20px;
+            margin-top: 20px;
+            width: 250px;
+            height: 80px;
+            background-color: rgba(45, 44, 67, 0.4);
+            display:flex;
+            justify-content: flex-start;
+            align-items: center;
+
+            h1,p{
+                display:inline;
+                margin-left: 20px;
+            }
+            p{
+                
+            }
+            border-radius: 15px;
+        }
+        .pcon:hover{
+            background-color: rgb(61, 60, 79);
+        }
+        
+    }
+}
+.tools{
+    width: 40vw;
+    height: fit-content;
+    border-radius: 20px;
+    background-color: rgba(38, 37, 64, 0.4);
+    .toolscon{
+        padding-bottom: 20px;
+        display: flex;
+        flex-wrap: wrap;
+        gap:20px;
+        justify-content: center;
+        align-items: center;
+        .tcon{
+            margin-left: 20px;
+            height: 150px;
+            width: 150px;
+            background-color: rgba(45, 44, 67, 0.4);
+            border-radius: 20px;
+            p ,h1{
+                text-align: center;
+            }
+        }
+        .tcon:hover{
+            background-color: rgb(61, 60, 79);
+        }
+    }
+
+ 
+}
+
+@media screen and (max-width: 1000px) {
+    .content {
+        flex-direction: column;
+        align-items: center;
+        margin-top: 20px;
+    }
+
+    .program,
+    .tools {
+        width: 90vw;
+        height: auto;
+        margin-bottom: 20px;
+        border-radius: 20px;
+    }
+}
+
+#skill{
+    background: linear-gradient(270deg, #4A2CEB, #D32FF8, #FF4081, #4A2CEB);
+    background-size: 600% 600%;
+    transition: all 0.5s ease;
+    animation: gradientBG 3s ease infinite;
+    color: #fff;
+}
+
+@keyframes gradientBG {
+    0% {
+        background-position: 0% 50%;
+    }
+
+    50% {
+        background-position: 100% 50%;
+    }
+
+    100% {
+        background-position: 0% 50%;
+    }
+}
